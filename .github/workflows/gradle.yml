@@ -25,14 +25,9 @@ jobs:
     steps:
       # 실행 권한 부여
       - name: Run chmod to make gradlew executable
-#        run: |
-#          cd ./
-#          chmod +x gradlew
         run: |
-          echo 'PARAM:' $0\
-          RELATIVE_DIR=`dirname "$0"`\
-          echo 'Dir:' $RELATIVE_DIR
-
+          cd ./Rabbit-Letter-Backend\
+          chmod +x gradlew
 
       # (1) 기본 체크아웃
       - name: Checkout
