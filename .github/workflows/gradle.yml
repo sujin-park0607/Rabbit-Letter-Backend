@@ -24,8 +24,8 @@ jobs:
 
     steps:
       # error
-      - name: Run chmod to make gradlew executable
-        run: chmod +x cd./gradlew
+#      - name: Run chmod to make gradlew executable
+#        run: chmod +x cd./gradlew
 
       # (1) 기본 체크아웃
       - name: Checkout
