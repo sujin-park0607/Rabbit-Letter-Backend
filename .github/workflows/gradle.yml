@@ -23,6 +23,9 @@ jobs:
     environment: production
 
     steps:
+      # error
+      - name: Run chmod to make gradlew executable
+        run: chmod +x ./gradlew
       # (1) 기본 체크아웃
       - name: Checkout
         uses: actions/checkout@v3
